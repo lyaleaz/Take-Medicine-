@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="20dp"
+    tools:context=".MainMenu">
+
+    <ImageView
+        android:id="@+id/back2"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/backgroud"
+        tools:ignore="ContentDescription" />
+
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="275dp"
+        android:layout_height="390dp"
+        android:background="@color/white"
+        android:hapticFeedbackEnabled="false"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.498">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="157dp"
+            android:layout_height="65dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="67dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="serif"
+            android:padding="9dp"
+            android:scrollbarSize="18sp"
+            android:text="Care about your medicine every time."
+            android:textAlignment="center"
+            android:textColor="#5C615C"
+            android:textSize="18sp"
+            android:textStyle="italic" />
+
+        <Button
+            android:id="@+id/singnwithEmail"
+            android:layout_width="245dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:drawableLeft="@drawable/whiteemail"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:text="SingIn with Email"
+            app:backgroundTint="#8BC34A" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="clip_horizontal|center"
+            android:layout_marginTop="7dp"
+            android:orientation="horizontal">
+
+            <TableRow
+                android:id="@+id/hr"
+                android:layout_width="90dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:background="#3E4A3F">
+
+            </TableRow>
+
+            <TextView
+                android:id="@+id/OR"
+                android:layout_width="44dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="7dp"
+                android:text="OR"
+                android:textAlignment="center"
+                android:textColor="#000000" />
+
+            <TableRow
+                android:id="@+id/dr"
+                android:layout_width="90dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:background="#3E4A3F" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/signup"
+            android:layout_width="242dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="SignUp"
+            app:backgroundTint="#4B6330" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

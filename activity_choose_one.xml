@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/back3"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".ChooseOne">
+    <ImageView
+        android:id="@+id/back2"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/backgroud"
+        tools:ignore="ContentDescription" />
+    <LinearLayout
+        android:id="@+id/linerlayout"
+        android:layout_width="265dp"
+        android:layout_height="330dp"
+        android:background="@drawable/background_shape"
+        android:orientation="vertical"
+        android:padding="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.498">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Signup As.."
+            android:textAlignment="center"
+            android:textColor="#4A504A"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/customer"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="Customer"
+            android:textSize="18sp"
+            app:backgroundTint="#607547" />
+
+        <Button
+            android:id="@+id/delivery"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:text="Delivery"
+            android:textSize="18sp"
+            app:backgroundTint="#607547" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
